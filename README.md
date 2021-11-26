@@ -62,7 +62,11 @@ int CadastrarNotas(){
 	}
 }
 void arquivo(Notas aluno){
-
+	ofstream arquivo; //<< "\n"<< "Aep 1°bim" << ";" << "\n"  //<< "Prova 1°bim"
+	arquivo.open("notas.csv", fstream::app);
+	arquivo << "Nome do aluno" << ";" << "Aep do 1° bim" << ";" << "Prova do 2° bim" << ";" << "Sub do 1° bim" << ";" << "Sub do 2° bim" 
+			<< aluno.nome << ";" << aluno.aep1 << ";" << aluno[i].prova1;
+	arquivo.close();
 
 }
 
